@@ -35,9 +35,8 @@
             <img src="<%- thumbnail_url %>" class="thumbnail-image" />
         <% } %>
         <div class="caption">
-            <span class="filename"><%- name %></span>
+            <span class="filename"><%- name %></span>&nbsp;
             <a rel="tooltip" title="Download Original" class="download thumbnail-action btn" target="download" href="<%- url %>"><i class="icon-download"></i></a>
-            {# ACHTUNG: data-action="delete" matters to javascript #}
             <a rel="tooltip" title="Delete" data-action="delete" class="delete thumbnail-action btn" href="#delete"><i class="icon-trash"></i></a>
         </div>
     </li>

@@ -139,7 +139,7 @@ class UploadHandler
                 $src_img = @imagecreatefromjpeg($file_path);
                 $write_image = 'imagejpeg';
                 $image_quality = isset($options['jpeg_quality']) ?
-                    $options['jpeg_quality'] : 75;
+                    $options['jpeg_quality'] : 90;
                 break;
             case 'gif':
                 @imagecolortransparent($new_img, @imagecolorallocate($new_img, 0, 0, 0));
